@@ -8,6 +8,6 @@ First version is ready but i will be adding new features.
 
  
 
- - [ ] Fix mobile version
- - [ ] Set items into localStorage
+ - [x] Fix mobile version
+ - [x] Set items into localStorage
  - [ ] New design
