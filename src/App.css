@@ -1,0 +1,107 @@
+html {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+.toDoContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+	top: -200px;
+}
+
+.toDoItems {
+	width: 35em;
+}
+
+.title {
+	display: flex;
+	width: 35em;
+	justify-content: space-between;
+	color: white;
+	margin-bottom: 3em;
+}
+
+.titleWhite {
+	display: flex;
+	width: 35em;
+	justify-content: space-between;
+	color: rgb(0, 0, 0);
+	margin-bottom: 3em;
+}
+
+.back-button {
+	background: none;
+	border: none;
+	margin: 1rem;
+	width: auto;
+	a {
+		color: inherit; /* blue colors for links too */
+		text-decoration: inherit; /* no underline */
+	}
+}
+
+.back-button a {
+	color: inherit; /* blue colors for links too */
+	text-decoration: inherit; /* no underline */
+}
+
+.back-button-dark {
+	color: white;
+}
+
+svg {
+	cursor: pointer;
+}
+
+.sun-icon {
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	height: 2rem;
+	width: 2rem;
+}
+
+.moon-icon {
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	height: 2rem;
+	width: 2rem;
+}
+
+.darkTheme {
+	background-color: hsl(235, 21%, 11%);
+	height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+	.App {
+		width: 100vw;
+		height: 100vh;
+	}
+	.toDoContainer {
+		top: -170px;
+		width: 100%;
+	}
+	.toDoItems {
+		width: 90%;
+	}
+	.title {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.toDoContainer {
+		top: -150px;
+		width: 100%;
+	}
+}
