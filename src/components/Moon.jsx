@@ -3,7 +3,7 @@ import { BsMoon } from 'react-icons/bs';
 
 const Moon = ({ onClick }) => {
 	return (
-		<button className='moon-icon' onClick={onClick}>
+		<button onClick={onClick} className='moon-icon'>
 			<BsMoon size={'large'} color={'black'} />
 		</button>
 	);

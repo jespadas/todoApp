@@ -40,10 +40,6 @@ img {
 	border: none;
 	margin: 1rem;
 	width: auto;
-	a {
-		color: inherit; /* blue colors for links too */
-		text-decoration: inherit; /* no underline */
-	}
 }
 
 .back-button a {
@@ -94,7 +90,7 @@ svg {
 	.toDoItems {
 		width: 90%;
 	}
-	.title {
+	.title .titleWhite {
 		width: 90%;
 	}
 }

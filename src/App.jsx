@@ -40,7 +40,6 @@ function App(props) {
 						src={theme === 'light' ? mobileLightBg : mobileDarkBg}
 						alt='theme bg'
 						className='mobileBg'
-						height={20}
 					/>
 				)}
 				<div className='toDoContainer'>

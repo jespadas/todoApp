@@ -17,9 +17,17 @@ const ToDoMobile = (props) => {
 	// this is used to track the number of items not complete
 	const [incompleteCount, setIncompleteCount] = useState(0);
 
+	useEffect(() => {
+		const storedTodos = JSON.parse(localStorage.getItem('toDoList'));
+		if (storedTodos) {
+			setToDoList(storedTodos);
+		}
+	}, []);
+
 	// update the incomplete count whenever the list changes
 	useEffect(() => {
 		setIncompleteCount(toDoList.filter((item) => !item.complete).length);
+		localStorage.setItem('toDoList', JSON.stringify(toDoList));
 	}, [toDoList]);
 
 	// we prevent default to stop the default behaviour
